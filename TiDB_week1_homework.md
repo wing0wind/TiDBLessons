@@ -172,7 +172,7 @@ cp ./tidb/bin/tidb-server ./bin/
         "git_hash": "ae7a6ecee6e3367da016df0293a9ffe9cc2b5705",
         "start_timestamp": 1597547888,
         "deploy_path": "/Users/y-bi/TiDB/src/github.com/pingcap/./bin",
-        "state_name": "Down"
+        "state_name": "Up"
       },
       "status": {
         "capacity": "0B",
