@@ -65,11 +65,14 @@ UPDATE - Takes(s): 3.0, Count: 508, OPS: 172.0, Avg(us): 83150, Min(us): 12893, 
 <p>关键指标截图：</p>
 <ul>
 <li>TiDB Query Summary 中的 qps 与 duration</li>
-<li></li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/yscb/2020-08-24%2017-23-06%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
 <li>TiKV Details 面板中 Cluster 中各server 的 CPU 以及 QPS 指标</li>
-<li></li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/yscb/2020-08-24%2017-21-49%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/yscb/2020-08-24%2017-21-54%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
 <li>TiKV Details 面板中 grpc 的 qps 以及 duration</li>
-<li>Dashboard面板</li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/yscb/2020-08-24%2017-20-48%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
+<li>Dashboard面板<br>
+-<img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/yscb/2020-08-24%2017-14-50%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
 </ul>
 <h3 id="go-tpc-测试">go-tpc 测试</h3>
 <p>准备数据：</p>
@@ -90,10 +93,14 @@ tpmC: 43.4
 <p>关键指标截图：</p>
 <ul>
 <li>TiDB Query Summary 中的 qps 与 duration</li>
-<li></li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/tpcc/2020-08-25%2003-08-53%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
 <li>TiKV Details 面板中 Cluster 中各server 的 CPU 以及 QPS 指标</li>
-<li></li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/tpcc/2020-08-25%2003-09-22%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
 <li>TiKV Details 面板中 grpc 的 qps 以及 duration</li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/tpcc/2020-08-25%2003-11-04%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
+<li>Dashboard面板</li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/tpcc/2020-08-25%2003-08-35%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
+<li><img src="https://github.com/wing0wind/TiDBLessons/raw/master/Images/tpcc/2020-08-25%2003-07-43%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="enter image description here"></li>
 </ul>
 <h2 id="结论">结论</h2>
 <p>目前环境下瓶颈不处于TiDB上。TiKV层的IO中，特别是插入相关耗时较多，推测大多由锁导致，涉及模块 raftstore ，Scheduler。</p>
